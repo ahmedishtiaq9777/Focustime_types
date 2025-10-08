@@ -1,23 +1,29 @@
 {
-  "name": "focustime_types-1",
+  "name": "focustime_types",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Shared TypeScript types for Focustime frontend and backend",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "clean": "rm -rf dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ahmedishtiaq9777/Focustime_types.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "typescript",
+    "types",
+    "focustime"
+  ],
+  "author": "Ahmed Ishtiaq",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ahmedishtiaq9777/Focustime_types/issues"
   },
   "homepage": "https://github.com/ahmedishtiaq9777/Focustime_types#readme",
-  "description": "",
   "devDependencies": {
-    "typescript": "^5.9.3"
+    "typescript": "^5.2.2"
   }
 }
