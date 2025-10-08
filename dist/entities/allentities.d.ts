@@ -1,9 +1,7 @@
 export interface Usertype {
-    id: number;
     name: string;
     email: string;
     role: "user" | "admin";
-    created_at?: string;
 }
 export interface Tasktype {
     id: number;
