@@ -1,6 +1,6 @@
 export interface Usertype {
   name: string;
-  email: string;
+  email?: string;
   role: "user" | "admin";
 }
 
