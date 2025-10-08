@@ -1,4 +1,4 @@
-import { Task } from "../entities/allentities";
+import { Tasktype } from "../entities/allentities";
 export interface CreateTaskDTO {
     title: string;
     scheduled_for: string;
@@ -10,7 +10,7 @@ export interface CreateTaskDTO {
 export interface UpdateTaskDTO extends Partial<CreateTaskDTO> {
 }
 export interface PaginatedTasksResponse {
-    tasks: Task[];
+    tasks: Tasktype[];
     currentPage: number;
     totalPages: number;
     totalTasks: number;
