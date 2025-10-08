@@ -1,4 +1,4 @@
-export interface User {
+export interface Usertype {
   id: number;
   name: string;
   email: string;
@@ -6,17 +6,17 @@ export interface User {
   created_at?: string;
 }
 
-export interface Task {
+export interface Tasktype {
   id: number;
   title: string;
   description?: string;
   scheduled_for?: string;
-  priority?: "low" | "medium" | "high";
+  priority?: "Low" | "Moderate" | "Extreme";
   status?: "pending" | "in_progress" | "completed";
   user_id: number;
 }
 
-export interface Notification {
+export interface Notificationtype {
   id: number;
   message: string;
   is_read: boolean;
