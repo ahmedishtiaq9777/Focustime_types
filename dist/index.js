@@ -15,9 +15,8 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 // Entities
-__exportStar(require("./entities/allentities"), exports);
-// DTOs
-__exportStar(require("./dto/authdto"), exports);
-__exportStar(require("./dto/taskdto"), exports);
+__exportStar(require("./types/task"), exports);
+__exportStar(require("./types/user"), exports);
+__exportStar(require("./types/notification"), exports);
 // Common responses
 __exportStar(require("./responses/ApiResponse"), exports);

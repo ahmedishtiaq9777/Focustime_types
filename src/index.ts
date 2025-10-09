@@ -1,9 +1,6 @@
 // Entities
-export * from "./entities/allentities";
-
-// DTOs
-export * from "./dto/authdto";
-export * from "./dto/taskdto";
-
+export * from "./types/task";
+export * from "./types/user";
+export * from "./types/notification";
 // Common responses
 export * from "./responses/ApiResponse";
