@@ -18,5 +18,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./types/task"), exports);
 __exportStar(require("./types/user"), exports);
 __exportStar(require("./types/notification"), exports);
+__exportStar(require("./types/dashboardData"), exports);
 // Common responses
 __exportStar(require("./responses/ApiResponse"), exports);
