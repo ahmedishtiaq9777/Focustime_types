@@ -9,7 +9,7 @@ export interface UserCreateDTO {
   name: string;
   email: string;
   password: string;
-  role?: "user" | "admin";
+  role: "user" | "admin";
 }
 
 export interface UserUpdateDTO {
