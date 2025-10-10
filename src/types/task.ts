@@ -13,6 +13,15 @@ export interface TaskAttributes {
   completed_at?: Date;
 }
 
+// searching, pagination, filtering
+export interface TaskFilterQuery {
+  search?: string;
+  status?: TaskStatus;
+  priority?: TaskPriority;
+  page?: number;
+  limit?: number;
+}
+
 export type TaskStatus = "Not Started" | "In Progress" | "Completed";
 export type TaskPriority = "Low" | "Moderate" | "Extreme";
 
@@ -48,15 +57,4 @@ export interface PaginatedTasksResponse {
   currentPage: number;
   totalPages: number;
   totaltasks: number;
-}
-/**
-  Represents filters that frontend may send when fetching tasks
- (e.g., search, status, priority)
- */
-export interface TaskFilterQuery {
-  search?: string;
-  status?: string;
-  priority?: string;
-  page?: number;
-  limit?: number;
 }
