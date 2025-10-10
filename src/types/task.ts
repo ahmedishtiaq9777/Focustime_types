@@ -43,7 +43,7 @@ export type TaskList = TaskAttributes[];
  * Represents a paginated response of tasks
  * Useful for dashboard or list views
  */
-export interface PaginatedTasks {
+export interface PaginatedTasksResponse {
   tasks: TaskAttributes[];
   currentPage: number;
   totalPages: number;
