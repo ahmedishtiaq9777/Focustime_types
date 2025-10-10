@@ -13,6 +13,9 @@ export interface TaskAttributes {
   completed_at?: Date;
 }
 
+export type TaskStatus = "Not Started" | "In Progress" | "Completed";
+export type TaskPriority = "Low" | "Moderate" | "Extreme";
+
 /**
  * Data Transfer Object used when creating a new Task
  * Sent from frontend → backend
@@ -34,18 +37,18 @@ export type UpdateTaskDTO = Partial<
  * This represents what API responses will contain
  */
 export type TaskResponseDTO = TaskAttributes;
+export type TaskList = TaskAttributes[];
 
 /**
  * Represents a paginated response of tasks
  * Useful for dashboard or list views
  */
-export interface PaginatedTasksResponse {
-  tasks: TaskResponseDTO[];
-  total: number;
-  page: number;
-  limit: number;
+export interface PaginatedTasks {
+  tasks: TaskAttributes[];
+  currentPage: number;
+  totalPages: number;
+  totaltasks: number;
 }
-
 /**
   Represents filters that frontend may send when fetching tasks
  (e.g., search, status, priority)
