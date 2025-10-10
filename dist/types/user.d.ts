@@ -3,7 +3,7 @@ export interface UserAttributes {
     name: string;
     email?: string;
     password: string;
-    role: string;
+    role: "user" | "admin";
 }
 export interface UserCreateDTO {
     name: string;
