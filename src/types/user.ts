@@ -5,6 +5,9 @@ export interface UserAttributes {
   password: string;
   role: "user" | "admin";
 }
+
+export type UserCreationAttributes = Omit<UserAttributes, "uid">;
+
 export interface UserCreateDTO {
   name: string;
   email: string;
